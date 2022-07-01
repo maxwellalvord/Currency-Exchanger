@@ -7,15 +7,17 @@ import usdAgainstOthers from './js/money.math.js';
 
 
 function clearFields() {
-  $('#USD').val("");
+  $('#dollar').val("");
   $('#currency').val("");
   $('#showExchange').text("");
   $('#showErrors').text("");
 }
 
 
-function getElements(response) {
+function getElements(response, usd) {
   if (response.conversion_rates) {
+    console.log(usd);
+    // const convert = (response.conversion_rates.USD * usd)
     $('#showExchange').text(`${response.conversion_rates.USD} `);
   } else {
     $('.showErrors').text(`There was an error: ${response}`);
@@ -23,10 +25,10 @@ function getElements(response) {
 }
 
 
-async function makeApiCall(newMoney) {
+async function makeApiCall(newMoney, usd) {
   const response = await usdAgainstOthers.getCurrency(newMoney);
   console.log(response);
-  getElements(response);
+  getElements(response, usd);
 }
 
 
@@ -34,9 +36,9 @@ async function makeApiCall(newMoney) {
 $(document).ready(function() {
   $('#formOne').submit(function() {
     event.preventDefault();
-    // let usd = parseInt($('#USD').val());
+    let usd = parseInt($('#dollar').val());
     let newMoney = $('#currency').val();
     clearFields();
-    makeApiCall(newMoney);
+    makeApiCall(newMoney, usd);
   });
 });
