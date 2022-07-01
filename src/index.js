@@ -12,8 +12,6 @@ function clearFields() {
   $('#showError').text("");
 }
 
-
-
 function getElements(response, usd, newMoney) {
   if (response.conversion_rates) {
     const convert = (usd / response.conversion_rates.USD).toFixed(4);
@@ -41,20 +39,20 @@ $(document).ready(function() {
 });
 
 function clearweather(){
-  $('#location').text("");
-  $('#city').val("");
+  $('#location').val("");
 }
 
 function getWeatherElements(response) {
   if (response.main) {
+    console.log(response);
     const f = (1.8 * (response.main.temp - 273) + 32).toFixed(1);
     const fmin = (1.8 * (response.main.temp_min - 273) + 32).toFixed(1);
     const fmax = (1.8 * (response.main.temp_max - 273) + 32).toFixed(1);
-    $('#showTemp').text(`The temperature is ` + f  + ` degrees.`);
+    $('#showTemp').text(`In ${response.name} the temperature is ` + f  + ` degrees.`);
     $('#showTempMin').text(`The low for today is ` + fmin  + ` degrees.`);
     $('#showTempMax').text(`The high for today is ` + fmax  + ` degrees.`);
   } else {
-    $('#showError').text(`There was an error: ${response}`);
+    $('#showErrors').text(`There was an error: ${response}`);
   }
 }
 
@@ -72,6 +70,7 @@ $(document).ready(function() {
     $('#showTemp').show();
     $('#showTempMin').show();
     $('#showTempMax').show();
+    $('#showErrors').show();
   });
 });
 
