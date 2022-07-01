@@ -1,8 +1,10 @@
-# (Application Name)
+# Currency Exchange
 
-#### (Brief Description of Application)
+#### A simple webpage that uses the [ExchangeRate-API](https://www.exchangerate-api.com/) to allow you to calculate the exchange of currency internationally.
+<br>
 
-#### By (Your Name Here)
+#### By Maxwell Alvord
+<br>
 
 ## Technologies Used
 
@@ -39,12 +41,14 @@
       width="60" height="40">
   </a>
 <a href="https://eslint.org/">
-      <img alt="ESlint Icon" src="https://eslint.org/assets/img/favicon.512x512.png"
+      <img alt="ESlint Icon" src="https://cdn.freebiesupply.com/logos/large/2x/eslint-1-logo-svg-vector.svg"
       width="60" height="40">
   </a>
 
+<br>
 
 ## Description
+<br>
 
 ## Setup/Installation Requirements
 
@@ -53,13 +57,13 @@
 * Do $ npm install
 * Do $ npm run build
 * To run in browser use $ npm run start 
-* To test use $ npm run test
 
+<br>
 
 ## Known Bugs
+* Allow 0 USD to be inputted
 
-* _Any known issues_
-* _should go here_
+<br>
 
 ## License
 [MIT](https://opensource.org/osd)
@@ -73,4 +77,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+<br>
+
 ## Contact Information
+Contact me with questions and bugs at: <br>
+[A link to my issues page on GitHub](https://github.com/maxwellalvord/maxwellalvord/issues)<br>
+or email me at <a href = "mailto:maxwellalvord@gmail.com">maxwellalvord@gmail.com</a>
