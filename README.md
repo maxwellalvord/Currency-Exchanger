@@ -63,6 +63,7 @@ This webpage will allow the user to be able to input an amount of dollars from t
 ## Known Bugs
 * Allow 0 USD to be inputted for a result of 0.
 * When a large number is outputted it will display in scientific notation rather than default format.
+* The Weather API is less verbose with its errors, may be hidden in console logs.
 
 <br>
 

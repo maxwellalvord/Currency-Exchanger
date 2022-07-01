@@ -39,3 +39,41 @@ body{
   opacity: .8;
   padding-bottom: 1%;
 }
+
+#showTemp{
+  display: none;
+  text-align: center;
+  color: rgb(218, 38, 209);
+  font-size: x-large;
+  background-color: aliceblue;
+  opacity: .8;
+  padding-bottom: 1%;
+}
+
+#showTempMin{
+  display: none;
+  text-align: center;
+  color: rgb(218, 38, 209);
+  font-size: x-large;
+  background-color: aliceblue;
+  opacity: .8;
+  padding-bottom: 1%;
+}
+
+#showTempMax{
+  display: none;
+  text-align: center;
+  color: rgb(218, 38, 209);
+  font-size: x-large;
+  background-color: aliceblue;
+  opacity: .8;
+  padding-bottom: 1%;
+}
+
+.weather{
+  text-align: center;
+  color: rgb(59, 46, 236);
+  font-size: x-large;
+  background-color: aliceblue;
+  opacity: .8;
+}
