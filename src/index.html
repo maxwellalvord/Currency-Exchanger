@@ -11,7 +11,7 @@
     <br>
       <form id="formOne">
         <label for="dollar">Input the US Dollar amount:</label>
-        <input type="number" id="dollar" required>
+        <input type="number" step=".01" id="dollar" required>
         <div class="form-group">
           <label for="currency">Select a currency to convert to:</label>
           <select class="form-control" id="currency" required>
@@ -22,7 +22,7 @@
             <option value="EUR">Euros</option>
           </select>
         </div>
-        <button id="subform" type="submit" class="btn btn-outline-success">Checkout with my pizza!</button>
+        <button id="subform" type="submit" class="btn btn-outline-success">Exchange Currency</button>
       </form>
       <div id="showExchange"></div>
       <div id="showError"></div>

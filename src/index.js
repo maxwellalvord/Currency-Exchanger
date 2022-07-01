@@ -14,11 +14,10 @@ function clearFields() {
 }
 
 
-function getElements(response, usd) {
+function getElements(response, usd, newMoney) {
   if (response.conversion_rates) {
-    console.log(usd);
-    // const convert = (response.conversion_rates.USD * usd)
-    $('#showExchange').text(`${response.conversion_rates.USD} `);
+    const convert = (usd / response.conversion_rates.USD).toFixed(4)
+    $('#showExchange').text(`With ${usd} American dollars you get ${convert} ${newMoney}s`);
   } else {
     $('.showErrors').text(`There was an error: ${response}`);
   }
@@ -27,8 +26,7 @@ function getElements(response, usd) {
 
 async function makeApiCall(newMoney, usd) {
   const response = await usdAgainstOthers.getCurrency(newMoney);
-  console.log(response);
-  getElements(response, usd);
+  getElements(response, usd, newMoney);
 }
 
 
@@ -36,7 +34,7 @@ async function makeApiCall(newMoney, usd) {
 $(document).ready(function() {
   $('#formOne').submit(function() {
     event.preventDefault();
-    let usd = parseInt($('#dollar').val());
+    let usd = parseFloat($('#dollar').val());
     let newMoney = $('#currency').val();
     clearFields();
     makeApiCall(newMoney, usd);
