@@ -1,10 +1,19 @@
 .jumbotron{
   text-align: center;
-  background-image: url();
+  background-image: url(https://images.unsplash.com/photo-1580519542036-c47de6196ba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80);
 }
 
 form{
-  color: rgb(5, 56, 100);
+  text-align: center;
+  color: rgb(218, 38, 209);
+  font-size: x-large;
+  background-color: aliceblue;
+  opacity: .8;
+  padding-bottom: 1%;
+}
+
+select{
+  text-align: center;
 }
 
 body{
