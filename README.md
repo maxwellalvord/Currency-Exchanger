@@ -1,10 +1,8 @@
 # Currency Exchange
 
 #### A simple webpage that uses the [ExchangeRate-API](https://www.exchangerate-api.com/) to allow you to calculate the exchange of currency internationally.
-<br>
 
 #### By Maxwell Alvord
-<br>
 
 ## Technologies Used
 
