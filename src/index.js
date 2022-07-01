@@ -35,6 +35,8 @@ $(document).ready(function() {
     let newMoney = $('#currency').val();
     clearFields();
     makeApiCall(newMoney, usd);
+    $('#showExchange').show();
+    $('#showError').show();
   });
 });
 

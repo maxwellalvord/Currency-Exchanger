@@ -63,7 +63,8 @@ This webpage will allow the user to be able to input an amount of dollars from t
 <br>
 
 ## Known Bugs
-* Allow 0 USD to be inputted
+* Allow 0 USD to be inputted for a result of 0.
+* When a large number is outputted it will display in scientific notation rather than default format.
 
 <br>
 
