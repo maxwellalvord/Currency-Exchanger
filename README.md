@@ -48,6 +48,8 @@
 <br>
 
 ## Description
+This webpage will allow the user to be able to input an amount of dollars from the United States of America and select a currency they would like to exchange it with. After the user can click the exchange currency button to see the calculation.
+
 <br>
 
 ## Setup/Installation Requirements
