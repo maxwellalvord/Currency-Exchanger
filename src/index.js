@@ -16,7 +16,7 @@ function clearFields() {
 
 function getElements(response, usd, newMoney) {
   if (response.conversion_rates) {
-    const convert = (usd / response.conversion_rates.USD).toFixed(4)
+    const convert = (usd / response.conversion_rates.USD).toFixed(4);
     $('#showExchange').text(`With ${usd} American dollars you get ${convert} ${newMoney}s`);
   } else {
     $('.showErrors').text(`There was an error: ${response}`);
