@@ -4,6 +4,8 @@
 
 #### By Maxwell Alvord
 
+<span style="background-color:blue">
+
 ## Technologies Used
 
 <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">
@@ -42,7 +44,7 @@
       <img alt="ESlint Icon" src="https://cdn.freebiesupply.com/logos/large/2x/eslint-1-logo-svg-vector.svg"
       width="60" height="40">
   </a>
-
+</span>
 <br>
 
 ## Description
