@@ -12,18 +12,9 @@ function clearFields() {
   $('#showError').text("");
 }
 
-// function getElements(response, usd, newMoney) {
-//   console.log(response);
-//   if (response.conversion_rates) {
-//     const convert = (usd / response.conversion_rates.USD).toFixed(4);
-//     $('#showExchange').text(`With ${usd} American dollars you get ${convert} ${newMoney}s`);
-//   } else {
-//     $('#showError').text(`There was an error: ${response.error}`);
-//     // $('.showErrors').text(`There was an error: ${response["error-type"]}`);
-//   }
-// }
 
-function getElements(response) {
+
+function getElements(response, usd, newMoney) {
   console.log(response);
   if (response.conversion_rates) {
     const convert = (usd / response.conversion_rates.USD).toFixed(4);
@@ -33,9 +24,9 @@ function getElements(response) {
   }
 }
 
-async function makeApiCall(newMoney) {
-  const response = await usdAgainstOthers.getCurrency(newMoney);
-  getElements(response);
+async function makeApiCall(newMoney, usd) {
+  const response = await usdAgainstOthers.getCurrency(newMoney, usd);
+  getElements(response, usd, newMoney);
 }
 
 $(document).ready(function() {
@@ -44,7 +35,7 @@ $(document).ready(function() {
     let usd = parseFloat($('#dollar').val());
     let newMoney = $('#currency').val();
     clearFields();
-    makeApiCall(newMoney);
+    makeApiCall(newMoney, usd);
   });
 });
 
