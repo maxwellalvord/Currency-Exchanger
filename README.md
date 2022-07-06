@@ -56,6 +56,12 @@ This webpage will allow the user to be able to input an amount of dollars from t
 
 * Clone this repository to your desktop.
 * Open repo folder in your text editor of choice.
+* You will need to make an account and get an API key. Do not use someone else's API key. The "Free Plan" allows for 2000 API calls per month.
+* Visit the [ExchangeRate-API](https://www.exchangerate-api.com/) site. Input your email address and click the "Get Free Key" button.
+* You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "Get Started!"
+* At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for the month.
+* Place your key in an .env file you create at the top level of your directory.
+* Name your API Key like so: API_KEY=key 
 * Do $ npm install
 * Do $ npm run build
 * To run in browser use $ npm run start 
